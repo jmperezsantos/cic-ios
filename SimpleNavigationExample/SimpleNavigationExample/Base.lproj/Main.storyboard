@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="SimpleNavigationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsb-x5-fd2">
+                                <rect key="frame" x="129" y="105" width="62" height="30"/>
+                                <state key="normal" title="Navegar!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gOL-6S-5Ub" kind="show" id="rNd-bH-F8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-Da-uze">
+                                <rect key="frame" x="134" y="188" width="53" height="30"/>
+                                <state key="normal" title="Tercero">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EDS-Vw-PKt" kind="show" id="wGs-Na-yLj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64006280283995631" green="0.6370883095947768" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="-86"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="X5M-p9-81T">
+            <objects>
+                <viewController id="gOL-6S-5Ub" customClass="SecondViewController" customModule="SimpleNavigationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tjo-d3-2Cs"/>
+                        <viewControllerLayoutGuide type="bottom" id="R2D-ap-TCe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cEn-vM-VF6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-Ws-Ra8">
+                                <rect key="frame" x="52" y="85" width="36" height="30"/>
+                                <state key="normal" title="Atrás"/>
+                                <connections>
+                                    <segue destination="zKz-hw-t0J" kind="unwind" unwindAction="unwindRegresar:" id="i4K-ff-lx7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yo-Xj-Pxs">
+                                <rect key="frame" x="168" y="183" width="49" height="30"/>
+                                <state key="normal" title="Avanza"/>
+                                <connections>
+                                    <segue destination="EDS-Vw-PKt" kind="show" id="t3f-GP-tPP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94840960932932228" blue="0.61648471838075714" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNX-DF-KqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zKz-hw-t0J" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-272"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O2V-eH-ihl">
+            <objects>
+                <viewController id="EDS-Vw-PKt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fa3-zs-hKu"/>
+                        <viewControllerLayoutGuide type="bottom" id="L3k-zm-RLS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B74-Fu-6sg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRL-8x-Dfq">
+                                <rect key="frame" x="49" y="121" width="103" height="30"/>
+                                <state key="normal" title="Volver Amarillo"/>
+                                <connections>
+                                    <segue destination="Zwd-5c-7c2" kind="unwind" unwindAction="volverAlAmarillo:" id="Suw-gi-1eG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvx-Mz-I7R">
+                                <rect key="frame" x="59" y="83" width="83" height="30"/>
+                                <state key="normal" title="Volver Inicio"/>
+                                <connections>
+                                    <segue destination="Zwd-5c-7c2" kind="unwind" unwindAction="unwindRegresar:" id="1PP-Sf-ojE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkX-cD-NxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Zwd-5c-7c2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="462"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wGs-Na-yLj"/>
+    </inferredMetricsTieBreakers>
+</document>
